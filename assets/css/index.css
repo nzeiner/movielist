@@ -1,0 +1,68 @@
+body {font-family: sans-serif;
+      background-color: #DFDFDF
+    }
+
+
+.lightblue { background-color: #dfdfdg;
+
+}
+.custom-container { width:500px
+}
+
+#searchnav {
+    height: 50%;
+}
+
+.carousel-inner > .item > img, /* durch Beistrich kann ich einer neuen Kategorie dieselben Attribute vergeben (also .carousel inner) durch > vergebe ich das Attribut an das Elememt
+das sich direkt in dem varangeganegen Element befindet*/
+.carousel-inner > .item > a > img { width: 50%;
+                  margin: auto;
+}
+
+.container-seite { border-style: solid none none none;
+                   border-width: thin;
+                   width: 100%;
+                   margin-top: 10px;
+
+}
+
+.panel-custom { margin: auto;
+                width: 30%;
+                padding: 0;
+
+
+}
+
+.panel-image {width: 150px;
+             margin: none;
+ }
+
+.panel-heading_custom {
+                       padding: 0 0 0 0;
+}
+
+table { text-align: left;
+        border: solid black;
+        width: 50%;
+
+}
+
+.panelfaq {width: 50%;
+          margin-left: 25%;
+
+}
+
+#otherinfo {
+    height:100px;
+
+}
+
+#captions {
+           height: 40px;
+           background-color: yellow;
+}
+
+#images {
+           height: 200px;
+           background-color: blue;
+}

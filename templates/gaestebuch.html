@@ -1,0 +1,21 @@
+{% extends "home.html" %}
+
+{% block ueberschrift %}
+ <h1>GAESTEBUCH</h1>
+{% endblock ueberschrift %}
+
+{% block inhalt%}
+
+
+<ul>
+    {% for entry in entries %}
+    <li> <p>Name: {{entry.name}} </p>
+         <p>E-Mail: {{entry.email}}</p>
+         <p>Comment: {{entry.text}}</p>
+         <p>Datum: {{entry.created}}</p>
+
+
+    </li>
+    {% endfor %}
+</ul>
+{% endblock inhalt%}

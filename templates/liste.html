@@ -1,0 +1,36 @@
+{% extends "home.html" %}
+
+{% block ueberschrift %}
+ <h1>THE LIST</h1>
+{% endblock ueberschrift %}
+
+{% block inhalt%}
+
+    <h4>Logged in as: {{ user.nickname() }}!</h4>
+
+<div class="table-responsive">
+<table class="table">
+    <tr><th>Title</th>
+         <th>Year</th>
+         <th>Rating</th>
+         <th>Image</th>
+         <th>Comment</th>
+         <th>Datum</th>
+    </tr>
+
+    {% for movie in movies %}
+     <tr>
+         <td>  {{movie.title}} </td>
+         <td>  {{movie.year}}  </td>
+         <td>  {{movie.rating}}  </td>
+         <td> <a href="{{movie.img}}"><img src="{{movie.img}}" class="img-thumbnail" width="80" height="80"></a></td>
+         <td>  {{movie.comment}}  </td>
+         <td>  {{movie.created}}  </td>
+      </tr>
+
+</table>
+</div>
+
+{% endblock inhalt%}
+
+

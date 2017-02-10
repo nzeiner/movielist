@@ -1,0 +1,13 @@
+{% extends "home.html" %}
+
+{% block ueberschrift %}
+ <h1>LISTE</h1>
+{% endblock ueberschrift %}
+
+{% block inhalt%}
+<ul>
+    {% for message in messages %}
+    <li> {{message.message_text }} </li>
+    {% endfor %}
+</ul>
+{% endblock inhalt%}
